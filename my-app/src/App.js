@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Education from './components/Education';
+import Experience from './components/Experience';
+import PersonalInfo from './components/PersonalInfo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PersonalInfo
+  name="Juan Manuel Pulido Moreno"
+  photo="photojm.jpg"
+  birthdate="21/01/2002"
+/>
+      <Education />
+      <Experience />
     </div>
   );
 }
